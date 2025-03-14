@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.wheather{
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background-color: #b6d6fd;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #85c7fb;
+  border-radius: 10px;
+ margin: 10px 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6193b5; /* Tailwind's blue-500 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6193b5; /* Tailwind's blue-600 */
+}
