@@ -32,7 +32,7 @@ function App() {
 
     try {
       setisDataFetched(false);
-      let resp = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=21e7de7dec1748939d0114833250903&q=${location}&days=3`)
+      let resp = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=21e7de7dec1748939d0114833250903&q=${location}&days=3`)
 
 
       setweatherApi({ ...resp.data })
@@ -76,12 +76,12 @@ function App() {
       const API_KEY = "21e7de7dec1748939d0114833250903"; // Replace with your API Key
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/ip.json?key=21e7de7dec1748939d0114833250903&q=auto:ip`
+          `https://api.weatherapi.com/v1/ip.json?key=21e7de7dec1748939d0114833250903&q=auto:ip`
         );
         setCity(response.data.city);
 
         //Fetching data of user current location using city
-        let resp = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${response.data.city}&days=3`)
+        let resp = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${response.data.city}&days=3`)
 
         setweatherApi({ ...resp.data })
         setisDataFetched(true)
