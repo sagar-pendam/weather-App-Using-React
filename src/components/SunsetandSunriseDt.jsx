@@ -2,9 +2,7 @@ import React from 'react'
 import { TbSunrise, TbSunset } from "react-icons/tb";
 import * as motion from "motion/react-client"
 function SunsetandSunriseDt({ weatherApi }) {
-    console.log("inside Sunset:");
-    console.log(weatherApi?.forecast?.forecastday);
-    console.log(weatherApi?.forecast?.forecastday[0]?.day?.maxtemp_c);
+   
 
     return (
         <motion.div  initial={{ opacity: 0, scale: 0.5 }}

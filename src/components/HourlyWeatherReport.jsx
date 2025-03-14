@@ -4,10 +4,8 @@ import { ImDroplet } from "react-icons/im";
 import * as motion from "motion/react-client"
 function HourlyWeatherReport({weatherApi}) {
     const [hourlyWeatherReportDt, sethourlyWeatherReportDt] = useState(weatherApi?.forecast?.forecastday[0]?.hour)
-    console.log("Hourly Weather R");
     
-    console.log(weatherApi?.forecast?.forecastday[0]?.hour);
-
+    
     const formatTime = (timeString) => {
       const date = new Date(timeString);
       return date.toLocaleTimeString('en-US', {

@@ -15,13 +15,11 @@ import { FaThermometerEmpty, FaThermometerQuarter, FaThermometerHalf, FaThermome
 import { IoHappyOutline } from "react-icons/io5";
 import * as motion from "motion/react-client"
 function FullWeatherDt({ weatherApi, isDataFetched }) {
-    console.log("Inside FullWeatherDt");
-    console.log(weatherApi);
-
+    
     const currentData = ['Dew Point']
-    console.log(isDataFetched);
+  
     const removeAtrributes = ['last_updated', 'last_updated_epoch', 'is_day', 'condition']
-    console.log(weatherApi?.current?.gust_kph);
+   
     const getCloudIcon = (cloudValue) => {
         if (cloudValue <= 10) return <WiDaySunny />
         if (cloudValue <= 30) return <WiCloud />;

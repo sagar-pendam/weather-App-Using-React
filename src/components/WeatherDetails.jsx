@@ -4,12 +4,7 @@ import {WiDaySunny, WiCloud, WiCloudy, WiFog} from "react-icons/wi"
 import { ImDroplet } from "react-icons/im";
 import * as motion from "motion/react-client"
 function WeatherDetails(prop) {
-    // console.log(prop.weatherApi.prop.weatherApi);
-    console.log(prop.weatherApi);
-    console.log(prop.weatherApi?.forecast?.forecastday[0]?.day.daily_chance_of_rain);
     
-    console.log("weatherDt");
-    console.log(prop?.weatherApi?.forecast?.forecastday[0]?.day?.daily_chance_of_rain);
     const [formattedDate, seformattedDate] = useState(new Date(prop.weatherApi.location.localtime).toLocaleString('en-US', {
         weekday: 'short',  // Thu
         hour: 'numeric',   // 6

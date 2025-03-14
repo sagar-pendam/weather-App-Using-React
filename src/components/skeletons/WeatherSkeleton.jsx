@@ -1,3 +1,4 @@
+import React from 'react'
 const WeatherSkeleton = () => {
   return (
     <div className='weather-dt h-[192px] min-w-[80%] md:min-w-96 border px-4 py-2 rounded-2xl bg-gray-500 animate-pulse'>

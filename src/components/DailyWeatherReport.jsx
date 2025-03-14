@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { ImDroplet } from "react-icons/im";
 import * as motion from "motion/react-client"
 function DailyWeatherReport({weatherApi}) {
-    console.log("inside DailyWeather");
+    
     const [dailyWeatherReportDt, setdailyWeatherReportDt] = useState([])
     useEffect(() => {
        setdailyWeatherReportDt(weatherApi?.forecast?.forecastday)

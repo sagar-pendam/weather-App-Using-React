@@ -66,11 +66,10 @@ function App() {
   const handleKeyDown = async (event) => {
     if (event.key === "Enter") {
 
-      // alert("hi")
-      // Call your function here
+     
       await fetchWeatherApi()
     }
-    // alert("hi")
+
   };
   useEffect(() => {
     const fetchCityByIP = async () => {
@@ -86,10 +85,7 @@ function App() {
 
         setweatherApi({ ...resp.data })
         setisDataFetched(true)
-        // console.log(resp.data);
-
-        // console.log(response.data.city);
-        // console.log(response);
+       
 
 
       } catch (err) {

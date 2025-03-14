@@ -1,3 +1,4 @@
+import React from 'react'
 const DailyWeatherSkeleton = () => {
     return (
       <div className='flex max-w-[80%] sm:min-w-96 flex-col items-center justify-center gap-4 border  p-2 rounded-md'>
