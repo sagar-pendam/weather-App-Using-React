@@ -22,8 +22,7 @@ function WeatherDetails(prop) {
         <motion.div   initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-            duration: 0.8,
-            delay: 0.5,
+            duration: 0.8,            
             ease: [0, 0.71, 0.2, 1.01],
         }} className='weather-dt h-[192px] min-w-[80%] md:min-w-96 border px-4 py-2 rounded-2xl bg-[#87cefaa3]'>
             <div className='first_dt flex items-center justify-between'>

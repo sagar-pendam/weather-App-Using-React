@@ -99,14 +99,13 @@ function FullWeatherDt({ weatherApi, isDataFetched }) {
         <motion.div  initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{
-            duration: 0.8,
-            delay: 0.5,
+            duration: 0.8,          
             ease: [0, 0.71, 0.2, 1.01],
-        }} viewport={{once:true,amount:0.3}} className='weather-ui max-w-[80%] sm:min-w-96 border px-4 py-8 rounded-2xl bg-[#87cefaa3] '>
+        }} viewport={{once:true,amount:0.3}} className='weather-ui w-[93%] md:w-[40%] sm:max-w-[80%]  sm:min-w-96 border px-4 py-8 rounded-2xl bg-[#87cefaa3] '>
             {/* Weather Details */}
             
             {isDataFetched ? (
-                <ul className='flex flex-col gap-2 px-2 py-8  max-h-[400px] border border-white rounded-2xl overflow-x-auto  scroll-smooth'>
+                <ul className='flex flex-col gap-2 px-2 py-8 w-[100%]  max-h-[400px] border border-white rounded-2xl overflow-x-auto  scroll-smooth'>
                     {Object.entries(weatherApi.current)
                         .filter(([key]) => !removeAtrributes.includes(key))
                         .map(([key, value], index) => (

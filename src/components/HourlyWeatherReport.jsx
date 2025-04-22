@@ -18,8 +18,7 @@ function HourlyWeatherReport({weatherApi}) {
         <motion.div initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{
-            duration: 0.8,
-            delay: 0.5,
+            duration: 0.8,           
             ease: [0, 0.71, 0.2, 1.01],
         }} viewport={{once:true,amout:0.3}} className='flex max-w-[80%] sm:max-w-96   flex-col items-center justify-center gap-4 rounded-md bg-[#87cefaa3] px-5 py-10 border '>
           <h1 className='font-bold border px-4 py-2 rounded-md text-[16px] sm:text-lg bg-slate-800 text-white'>Hourly</h1>
